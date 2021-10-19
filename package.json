@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon -r esm app.js",
     "lint": "eslint --ext .js ./",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "db-migrate --migrations-dir ./app/db/migrations",
+    "migrate:up": "npm run migrate up"
   },
   "keywords": [
     "GraphQL"
@@ -19,12 +21,17 @@
     "bluebird": "^3.7.2",
     "cors": "^2.8.5",
     "dataloader": "^2.0.0",
+    "db-migrate": "^1.0.0-beta.16",
+    "db-migrate-pg": "^1.2.2",
     "dotenv": "^10.0.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "graphql": "^15.6.1",
     "helmet": "^4.6.0",
     "morgan": "^1.10.0",
+    "pg-promise": "^10.11.1",
+    "redis": "^3.1.2",
+    "uuid": "^8.3.2",
     "winston": "^3.3.3"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
 import constants from '../constants'
+import { v4 as uuidv4 } from 'uuid'
 
 const {
   FAIL,
@@ -13,6 +14,16 @@ const serverError = { message: INTERNAL_SERVER_ERROR_MSG, status: INTERNAL_SERVE
  * @class Helper
  */
 export default class Helper {
+  /**
+   * It genrates a uniqueId
+   * @static
+   * @memberof Helper
+   * @returns {string} - A unique string
+   */
+  static generateId () {
+    return uuidv4()
+  }
+
   /**
    * Generates a JSON-like graphQl response for success scenarios.
    * @static

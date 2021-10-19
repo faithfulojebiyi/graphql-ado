@@ -9,5 +9,12 @@ export default {
   WELCOME: 'Thanks for dropping by, you are at FUSS',
   INTERNAL_SERVER_ERROR_MSG: 'Oops, something broke on the server!!!',
   MODULE_ERROR: 'A module error occurred',
-  MODULE_ERROR_STATUS: 'MODULE_PROCESS_BROKE'
+  MODULE_ERROR_STATUS: 'MODULE_PROCESS_BROKE',
+  GRAPHQL_ERROR_MSG: 'Error while trying to fetch user. It is not you, it is us',
+  CREATE_USER_ERROR: 'Error creating user',
+  CREATE_USER_SUCCESS: 'Created user successfully',
+  CREATE_POST_ERROR: 'Error creating post',
+  CREATE_POST_SUCCESS: 'Created post successfully',
+  DB_ERROR_STATUS: 'DB_PROCESS_FAILED',
+  DB_ERROR: 'A database error occurred, either in redis or postgres'
 }
